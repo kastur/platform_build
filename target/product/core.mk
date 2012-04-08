@@ -22,6 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.config.notification_sound=OnTheHunt.ogg \
     ro.config.alarm_alert=Alarm_Classic.ogg
 
+# BEGIN privacy-added: PDroid
 PRODUCT_PACKAGES := \
     bouncycastle \
     com.android.location.provider \
@@ -66,6 +67,7 @@ PRODUCT_PACKAGES := \
     DownloadProvider \
     DownloadProviderUi \
     MediaProvider \
+    PDroid \
     PicoTts \
     SettingsProvider \
     TelephonyProvider \
@@ -75,6 +77,7 @@ PRODUCT_PACKAGES := \
     PackageInstaller \
     DefaultContainerService \
     Bugreport
+# END privacy-added: PDroid
 
 # host-only dependencies
 ifeq ($(WITH_HOST_DALVIK),true)
